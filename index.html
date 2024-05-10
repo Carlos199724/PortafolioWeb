@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Carlos Alberto</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/imagepor.png" alt="">
+            </div>
+            <h1>Carlos Alberto Goicochea Mirano</h1>
+            <h2 class="slogan">Soy <span class="input"></span></h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/profile.php?id=100093998617741" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://wa.link/aozjts" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://github.com/Carlos199724" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/carlos-alberto-goicochea-mirano-782873286/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://join.skype.com/invite/oEeKoYbHYR12" target="_blank"><i class="fa-brands fa-skype"></i></a>
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+      <script type="text/Javascript">
+          var typed= new Typed(".input", {
+              strings: [" Freelancer.", " Wordpress web developer.", " Mobile developer Android & IOS."],
+              typeSpeed: 80,
+              backSpeed: 70,
+              loop: true
+          });
+        </script>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2><span class="sobre">SOBRE</span> <span class="mi">MÍ</span></h2>
+            <p><span>Hola, gusto en saludarlos. </span> Soy Bachiller de ingeniería de sistemas, un apasionado desarrollador de software con experiencia en la creación de soluciones digitales innovadoras. Mi enfoque principal es que no solo cumpla con los requisitos del cliente, sino que también ofrezca una experiencia de usuario excepcional. Me considero una persona motivada, dedicada y con una gran actitud positiva hacia el aprendizaje continuo contando así con la capacidad para trabajar en equipo para encontrar soluciones creativas a problemas complejos. ¡Quiero compartir mi pasión por la programación con todos ustedes!</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            24-10-1997
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +51 924195821
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            cgoicocheam@autonoma.edu.com
+                        </li>
+                        <li>
+                            <strong>País</strong>
+                            Lima-Perú
+                        </li>
+                        <li>
+                            <strong>Distrito</strong>
+                            Villa el Salvador
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Competencias Blandas</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-regular fa-handshake"></i>
+                            <span>Ética profesional</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-calendar-check"></i>
+                            <span>Eficiencia</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-clock-rotate-left"></i>
+                            <span>Puntualidad</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-hands-holding-child"></i>
+                            <span>Empatía</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-people-group"></i>
+                            <span>Comunicación</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-users"></i>
+                            <span>Trabajo en equipo</span>
+                        </div>
+
+                        <div class="interes">
+                            <i class="fa-solid fa-hands-holding-child"></i>
+                            <span>Creatividad e
+                                <br>
+                                Innovación
+                            </span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-people-group"></i>
+                            <span>Perseverancia</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-users"></i>
+                            <span>Capacidad
+                                <br>
+                                Analítica
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button id="descargar-cv">
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+        <script src="curriculum.js"></script>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2><span class="sobre">MIS</span> <span class="mi">HABILIDADES</span></h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Frontend</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Wordpress</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Figma</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Flutter</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Backend</h3>
+                    <div class="skill">
+                        <span>MySql</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>GitHub</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>PostMan</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Sql Server</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Firebase</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>DBeaver</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <div class="skills" id="portfolio">
+        <div class="contenido-seccion">
+            <h2><span class="sobre">MI</span> <span class="mi">PORTAFOLIO</span></h2>
+        </div>
+  <div class="containerpor">
+    <!--Card1-->
+    <div class="container__card">
+      <img src="img/ikaro.PNG" alt="img" />
+      <div class="subcontainer">
+        <p class="container__title">Desarrollo web</p>
+        <p class="container__subtitle">WORDPRESS</p>
+        <p class="container__description">
+            Plataforma creada dedicada a la limpieza espiritual, donde hemos 
+            creado un espacio en línea donde los usuarios pueden explorar
+            y acceder a una variedad de recursos, también se integró plugins y 
+            herramientas específicas de WordPress para mejorar la funcionalidad
+            y el rendimiento de nuestro sitio.
+        </p>
+        <a class="button" href="https://www.ikarooflight.com/" target="_blank">Visualizar</a>
+      </div>
+    </div>
+    <!--Card2-->
+    <div class="container__card">
+      <img src="img/psico.png" alt="img" />
+      <div class="subcontainer">
+        <p class="container__title">Desarrollo web</p>
+        <p class="container__subtitle">WORDPRESS</p>
+        <p class="container__description">
+            He creado una plataforma donde barca una amplia gama de cursos de
+            arquitectura con una interfaz intuitiva y amigable, los estudiantes
+            pueden navegar fácilmente por los cursos, inscribirse en ellos. Por
+            otro lado conlleva pasarelas de pago online ya que está adaptada al
+            proceso ecommerce.            
+        </p>
+        <a class="button" href="https://arturomontenegro.com.pe/" target="_blank">Visualizar</a>
+      </div>
+    </div>
+
+    <!--Card3-->
+    <div class="container__card">
+      <img src="img/romo2.PNG" alt="img" />
+      <div class="subcontainer">
+        <p class="container__title">Desarrollo web</p>
+        <p class="container__subtitle">WORDPRESS</p>
+        <p class="container__description">
+            He creado un entorno virtual donde los terapeutas puedan ofrecer sus
+            servicios de tal manera que muchas personas tengan conocimiento, el
+            sistema conlleva a reservas de cita de manera rápida y fácil por el
+            ultimo proporciona información relevante a cada terapia con el único
+            objetivo de que se vea el profesionalismo.
+        </p>
+        <a class="button" href="https://romoaei.com/" target="_blank">Visualizar</a>
+      </div>
+    </div>
+  </div>
+  <div class="containerpor">
+    <!--Card1-->
+    <div class="container__card">
+      <img src="img/Captura01215.png" alt="img" />
+      <div class="subcontainer">
+        <p class="container__title">Desarrollo web</p>
+        <p class="container__subtitle">WORDPRESS</p>
+        <p class="container__description">
+            Esta página fue desarrollada con la finalidad de ofrecer los servicios
+            de telecomunicaciones, energía y construcción, dicha página cuenta con 
+            una optimización SEO como posicionamiento adecuado, por otro lado, cuenta
+            con funcionalidad amigable para los usuarios, finalmente la página tiene la
+            funcionalidad de enviar consultas vía Gmail y WhatsApp para que haya una
+            buena gestión.
+        </p>
+        <a class="button" href="https://www.superlink.pe/" target="_blank">Visualizar</a>
+      </div>
+    </div>
+    <!--Card2-->
+    <div class="container__card">
+        <img src="img/capturamovil.PNG" alt="img" />
+        <div class="subcontainer">
+          <p class="container__title">Desarrollo Movil</p>
+          <p class="container__subtitle">FLUTTER - FIGMA</p>
+          <p class="container__description">
+            El proyecto es una billetera digital de canjes de productos por puntos obtenidos,
+            en cuanto a la construcción en la parte del diseño del proyecto trabaje con la 
+            herramienta de figma, sin embargo, la ejecución lo realice con el framework que ocupo
+            la parte del frontend y como backend llegue a trabajar con el consumo de las apis
+            rest, con la única finalidad de cumplir las expectativas de la compañía.
+          </p>
+          <a class="button" href="https://github.com/Carlos199724/AppFlutterWalletITSYSTEM" target="_blank">Visualizar</a>
+        </div>
+      </div>
+
+    <!--Card3-->
+    <div class="container__card">
+      <img src="img/fondoapp.PNG" alt="img" />
+      <div class="subcontainer">
+        <p class="container__title">Desarrollo Movil</p>
+        <p class="container__subtitle">FLUTTER - FIGMA</p>
+        <p class="container__description">
+            El proyecto es CRM que realiza la gestión de seguimiento a los clientes, mediante
+            resultados estadísticos.Este proyecto conlleva vista de clientes, vista de notificaciones,
+            detalle de cada cliente, registro derecordatorios, proceso de llamadas telefónicas y comunicación
+            por WhatsApp, finalmente como construcciónse utilizó como frontend el framework de flutter y 
+            como backend consumo de API REST.            
+        </p>
+        <a class="button" href="https://github.com/Carlos199724/AppCRMITSystem" target="_blank">Visualizar</a>
+      </div>
+    </div>
+  </div>
+  <!-- Pruebas movil web -->
+  <div class="container5">
+    <h2><span class="sobre">PROYECTOS</span> <span class="mi">MOVILES</span></h2>
+    <div class="video-container">
+        <div class="video"><video src="video/videoCRM.mp4" muted></video></div>
+        <div class="video"><video src="video/videooriginalApp.mp4" muted></video></div>
+    </div>
+    <div class="popup-video">
+        <span>&times</span>
+        <video src="video/videoAppCrm.mp4" muted autoplay controls></video>
+    </div>
+</div>
+<script>
+    document.querySelectorAll('.video-container video').forEach(vid =>{
+        vid.onclick=()=>{
+            document.querySelector('.popup-video').style.display='block';
+            document.querySelector('.popup-video video').src = vid.getAttribute('src');
+        }
+    });
+    document.querySelector('.popup-video span').onclick=()=>{
+        document.querySelector('.popup-video').style.display='none';
+
+    }
+</script>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2><span class="sobre">MÍ</span> <span class="mi">CURRICULUM</span></h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Ingeniería de Sistemas</h4>
+                        <span class="casa">Universidad Autónoma del Perú</span>
+                        <span class="fecha">2017 - 2023</span>
+                        <p>Es una de la universidades que poco a poco se a esta haciendo conocida a nivel nacional e internacional.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Ingeniería de Sistemas</h4>
+                        <span class="casa">VI Congreso internacional de Ingeniería de Sistemas</span>
+                        <span class="fecha">2018 - 2018</span>
+                        <p>En este congreso se llevo temas de seguridad informatica, seguridad de estrustura sistema y la bulnebarilidad de los desarrollos de software.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Ingeniería de Sistemas</h4>
+                        <span class="casa">Curso de Wordpress</span>
+                        <span class="fecha">2023 - 2024</span>
+                        <p>Es curso de desarrollo web que lleve temas de desarrollo web mediante Edith Elementor que es un plugin de wordpres, muy aparte de ello aprendi con plugins de pago, implemtar estilo html y css y por ultimo aprendí posicionamiento SEO.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Ingeniería de Sistemas</h4>
+                        <span class="casa">Database Design and programming with SQL</span>
+                        <span class="fecha">2021 - 2021</span>
+                        <p>Lleve un taller de base de datos en Sql done enfatesi consultas , relación de tablas dinamicas, triggers etc.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Freelancer</h4>
+                        <span class="casa">Restaurante Inv. Palacios</span>
+                        <span class="fecha">Mayo 2021 - Octubre 2021</span>
+                        <p>Desarrolle un App movil de dlivery donde me enfoque en el diseño de software de acuerdo con los requerimientos proporcionados.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">ITSystem</span>
+                        <span class="fecha">Febrero 2024 - Abri 2024</span>
+                        <p>Tube la capacidad de asumir el cargo de practicante de desarrollador movil Android & IOS, donde trabaje con el framework de flutter consumiendo APIS REST, con el objetivo de cumplir los requerimientos de la compañia basado marco de trabajo programado.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">TEC Novedades</span>
+                        <span class="fecha">Enero 2024 - Abril 2024</span>
+                        <p>Tube la capacidad de asumir el cargo de practicante como desarrollador web, donde trabaje con la plataforma de Wordpress, plasmando una gestion de contenido a distintiso proyectos asignados con el finalidad de cumplir calidosamente los requemiento plasmados y finalmente otorgandole un posicionamiento SEO a los proyectos web.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <!-- SECCION CONTACTO -->
+<!-- SECCION CONTACTO -->
+<section id="contacto" class="contacto">
+    <h2><span class="sobre">MÍ</span> <span class="mi">CONTACTO</span></h2>
+    <div class="containercon">
+      <span class="big-circle"></span>
+      <img src="" class="square" alt="" />
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="titleconct">Mantengámonos en contacto</h3>
+          <p class="text">
+            Desarrollador apasionado en busca de nuevos proyectos interesantes.
+            ¡Hablemos sobre cómo puedo contribuir a tu próximo éxito!
+          </p>
+          <div class="info">
+            <div class="information">
+              <img src="assets/location.png" class="icon" alt="" />
+              <p>Villa el Salvador, Lima-Perú</p>
+            </div>
+            <div class="information">
+              <img src="assets/email.png" class="icon" alt="" />
+              <p>cgoicocheam@autonoma.edu.pe</p>
+            </div>
+            <div class="information">
+              <img src="assets/phone.png" class="icon" alt="" />
+              <p>+51 924195821</p>
+            </div>
+          </div>
+  
+          <div class="social-media">
+            <p>Contactame por mis redes sociales :</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=100093998617741" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://wa.link/aozjts" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/in/carlos-alberto-goicochea-mirano-782873286/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+  
+          <form action="https://formsubmit.co/atonoma.carlos97@gmail.com" method="POST">
+            <h3 class="titleconct">Contactame</h3>
+            <div class="input-container">
+              <input type="text" name="name" class="inpux" />
+              <label for="">Ingrese nombre</label>
+              <span>Ingrese nombre</span>
+            </div>
+            <div class="input-container">
+              <input type="email" name="email" class="inpux" />
+              <label for="">Ingrese correo electrónico</label>
+              <span>Ingrese correo electrónico</span>
+            </div>
+            <div class="input-container">
+              <input type="tel" name="phone" class="inpux" />
+              <label for="">Número movil</label>
+              <span>Número movil</span>
+            </div>
+            <div class="input-container textarea">
+              <textarea name="message" class="inpux"></textarea>
+              <label for="">Consulta</label>
+              <span>Consulta</span>
+            </div>
+            <input type="submit" value="Enviar" class="btn" />
+
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+            
+            <input type="hidden" name="_captcha" value="false">
+          </form>
+          <div class="confirmation-container" style="display: none;">
+            <div class="confirmation-message">
+                ¡Tu mensaje se ha enviado correctamente!🎉🤗
+                En breve me contacto contigo.🚀
+                Muchas Gracias !!!🤝🏻
+            </div>
+        </div>
+        <div class="error-container" style="display: none;">
+            <div class="error-message">
+                Por favor, completa todos los campos.
+            </div>
+        </div>
+      </div>
+    </div>
+  
+    <script src="app.js"></script>
+    <script src="confirmation-message.js"></script>
+</section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/profile.php?id=100093998617741" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://wa.link/aozjts" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://github.com/Carlos199724" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/carlos-alberto-goicochea-mirano-782873286/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://join.skype.com/invite/oEeKoYbHYR12" target="_blank"><i class="fa-brands fa-skype"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
